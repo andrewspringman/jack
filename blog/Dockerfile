@@ -9,8 +9,8 @@ WORKDIR /usr/share/nginx/html
 #This image doesn't have git, so
 #   Update and upgrade apk
 #   Use apk to install git
-#   Clone just the app directory
-#   Move the app directory to where we are
+#   Clone just the blog directory
+#   Move the blog directory to where we are
 #   Delete the excess files
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh && \
